@@ -1,0 +1,622 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bt5 Form validation & Content</title>
+
+<!--css links-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+
+<!--bt5 Form validation start-->
+	<div class="container border rounded border-primary">
+
+		<form>
+			<div class="row mb-3">
+				<div class="col">
+					<input type="text" class="form-control" name="" placeholder="First Name">
+				</div>
+				<div class="col">
+					<input type="text" name="" class="form-control" placeholder="Last Name">
+				</div>
+			</div>
+			<div class="row g-3 mb-3">
+				<div class="col">
+					<input type="text" class="form-control" name="" placeholder="First Name">
+				</div>
+				<div class="col">
+					<input type="text" name="" class="form-control" placeholder="Last Name">
+				</div>
+			</div>
+		</form>
+		<form class="row g-3">
+			<div class="col-md-6">
+				<label for="email" class="form-label col-form-label-lg">Email</label>
+				<input type="email" class="form-control form-control-lg" name="email" id="email">
+			</div>
+			<div class="col-md-6">
+				<label for="password" class="form-label col-form-label-lg">Password</label>
+				<input type="password" class="form-control form-control-lg" name="password" id="password">
+			</div>
+			<div class="col-12">
+				<label for="address" class="form-label">Address</label>
+				<input type="text" class="form-control" name="address" id="address">
+			</div>
+			<div class="col-md-4">
+				<label for="city" class="form-label">City</label>
+				<input type="text" class="form-control" name="city" id="city">
+			</div>
+			<div class="col-md-4">
+				<label for="number" class="form-label">Zip Code</label>
+				<input type="number" class="form-control" name="number" id="number">
+			</div>
+			<div class="col-md-4">
+				<label for="state" class="form-label">State</label>
+				<select id="state" class="form-select">
+					<option selected>Choose from below</option>
+					<option>Sanfrancisco</option>
+					<option>California</option>
+					<option>Las Vegas</option>
+				</select>
+			</div>
+			<div class="col-12">
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="checkbox" id="gridcheck">
+					<label for="gridcheck" class="form-check-label">Check Me Out</label>
+				</div>
+			</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-info">Sign In</button>
+			</div>
+		</form>
+	</div>
+	<div class="container">
+		<form>
+			<div class="row mb-3">
+				<label for="email" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" name="email" id="email" class="form-control">
+				</div>
+			</div>
+			<div class="row mb-3">
+				<label for="password" class="col-sm-2 col-form-label">Password</label>
+				<div class="col-sm-10">
+					<input type="password" name="password" id="password" class="form-control">
+				</div>
+			</div>
+			<fieldset class="row mb-3">
+				<legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+				<div class="col-sm-10">
+					<div class="form-check">
+						<input type="radio" name="radio" class="form-check-input">
+						<label class="form-check-label" for="radio">First Radio</label>
+					</div>
+					<div class="form-check">
+						<input type="radio" name="radio" class="form-check-input">
+						<label for="radio" class="form-check-label">Second Radio</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="row mb-3">
+				<div class="col-sm-10 offset-sm-2">
+					<div class="form-check">
+						<input type="checkbox" name="checkbox" class="form-check-input">
+						<label for="checkbox" class="form-check-label">Checkbox</label>
+					</div>
+				</div>
+			</div>
+			<div class="row g-4">
+				<div class="col-sm-7">
+					<input type="text" name="city" class="form-control" placeholder="City">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="state" class="form-control" placeholder="State">
+				</div>
+				<div class="col-sm">
+					<input type="text" name="zip" class="form-control" placeholder="Zip">
+				</div>
+			</div>
+		</form>
+	</div>
+
+<!--Auto Sizing-->
+
+	<h2>Auto Sizing</h2>
+
+
+<div class="container border border-danger">
+	<form class="row gy-2 gx-3 align-items-center">
+		<div class="col-auto">
+			<label class="visually-hidden" for="name">Name</label>
+			<input type="text" class="form-control" name="text" id="name" placeholder="Jane Doe">
+		</div>
+
+		<div class="col-auto">
+			<label class="visually-hidden" for="username">Username</label>
+				<div class="input-group">
+					<div class="input-group-text">@</div>
+					<input type="text" name="username" id="username" class="form-control" placeholder="Username"> 
+				</div>
+		</div>
+
+		<div class="col-auto">
+    		<label class="visually-hidden" for="Preference">Preference</label>
+    			<select class="form-select" id="Preference">
+      				<option selected>Choose...</option>
+      				<option value="1">One</option>
+      				<option value="2">Two</option>
+      				<option value="3">Three</option>
+    			</select>
+  		</div>
+
+  		<div class="col-auto">
+    		<div class="form-check">
+      			<input class="form-check-input" type="checkbox" id="checkbox">
+      			<label class="form-check-label" for="checkbox">
+        			Remember me
+      			</label>
+    		</div>
+  		</div>
+
+  		<div class="col-auto">
+    		<button type="submit" class="btn btn-primary">Submit</button>
+  		</div>
+	</form>
+
+	<form class="row gy-2 gx-3 align-items-center">
+		<div class="col-auto">
+			<label for="name" class="visually-hidden">Name</label>
+			<input type="text" name="text" id="name" class="form-control" placeholder="Name">
+		</div>
+		<div class="col-auto">
+			<label for="username" class="visually-hidden">User Name</label>
+			<div class="input-group">
+				<div class="input-group-text">@</div>
+				<input type="text" name="username" id="username" class="form-control" placeholder="Username">
+			</div>
+		</div>
+		<div class="col-auto">
+			<div class="form-check">
+				<input type="checkbox" name="checkbox" class="form-check-input" id="checkbox">
+				<label class="form-check-label" for="checkbox">Remember Me</label>
+			</div>
+		</div>
+		<div class="col-auto">
+			<label for="Preference" class="visually-hidden">Preference</label>
+			<select class="form-select" id="Preference">
+				<option selected>Choose...</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+	</form>
+</div>
+
+<div class="container border border-info">
+
+			<form class="row g-3 needs-validation" novalidate>
+
+				<!--first name-->
+
+  				<div class="col-md-4">
+    				<label for="f_name" class="form-label">First name</label>
+   					<input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First Name " required>
+    					<div class="valid-feedback">Looks good!</div>
+    					<div class="invalid-feedback">Please Enter Your First Name</div>
+  				</div>
+
+  				<!--last name-->
+
+  				<div class="col-md-4">
+    				<label for="l_name" class="form-label">Last name</label>
+    				<input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter Your Last Name " required>
+    					<div class="valid-feedback">Looks good!</div>
+    					<div class="invalid-feedback">Please Enter Your Last Name</div>
+  				</div>
+
+  					<!--user name-->
+
+  				<div class="col-md-4">
+    				<label for="validationCustomUsername" class="form-label">Username</label>
+    					<div class="input-group has-validation">
+      						<span class="input-group-text" id="inputGroupPrepend">@</span>
+      						<input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      							<div class="invalid-feedback">Please Choose a Username.</div>
+    					</div>
+  				</div>
+
+  				<!--email address-->
+
+  				<div class="col-md-6">
+    				<label for="email" class="form-label">Email Address</label>
+    					<div class="input-group has-validation">
+      						<input type="email" class="form-control email" id="email" aria-describedby="inputGroupPrepend" name="email" placeholder="Enter Your Email Address" required>
+      						<span class="input-group-text" id="inputGroupPrepend">@gmail.com</span>
+      							<div class="invalid-feedback">Please Enter Your Email Address</div>
+    					</div>
+  				</div>
+
+  			
+
+  				<!--password-->
+
+  				<div class="col-md-6">
+    				<label for="p_word" class="form-label">Password</label>
+    				<input type="password" class="form-control p_word" id="p_word" name="p_word" placeholder="Enter Your Password" required>
+    					<div class="valid-feedback">Looks good!</div>
+    					<div class="invalid-feedback">Please Enter Your Password</div>
+    					<div class="form-text" id="basic-addon4">Minimum 13 characters: (A-Z, capital & small letters, numbers)</div>
+  				</div>
+
+  				<!--destination-->
+
+  				<div class="input-group mb-3">
+  					<input type="text" class="form-control" aria-label="Text input with dropdown button">
+  					<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Select Your Destination</button>
+  					<ul class="dropdown-menu dropdown-menu-end">
+    					<li><a class="dropdown-item" href="#">Cananda</a></li>
+    					<li><a class="dropdown-item" href="#">USA</a></li>
+    					<li><a class="dropdown-item" href="#">UK</a></li>
+    					<li><hr class="dropdown-divider"></li>
+    					<li><a class="dropdown-item" href="#">Select Another</a></li>
+  					</ul>
+				</div>
+
+  				<!--city name-->
+
+ 				<div class="col-md-6">
+    				<label for="validationCustom03" class="form-label">City</label>
+    				<input type="text" class="form-control" id="validationCustom03" required>
+    					<div class="invalid-feedback">Please Provide a Valid City.</div>
+  				</div>
+
+  				<!--street name-->
+
+  				<div class="col-md-3">
+    				<label for="validationCustom04" class="form-label">State</label>
+    				<select class="form-select" id="validationCustom04" required>
+      					<option selected disabled value="">Choose one</option>
+      					<option>DC</option>
+      					<option>NY</option>
+      					<option>NJ</option>
+      					<option>Colombia</option>
+
+    				</select>
+    					<div class="invalid-feedback">Please Select a Valid State.</div>
+  				</div>
+
+  				<!--zip name-->
+
+  				<div class="col-md-3">
+    				<label for="validationCustom05" class="form-label">Zip</label>
+    				<input type="text" class="form-control" id="validationCustom05" required>
+    				<div class="invalid-feedback">Please Provide a Valid Zip.</div>
+  				</div>
+
+  				<!--checkbox-->
+
+  				<div class="col-12">
+   				 	<div class="form-check">
+      					<input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      					<label class="form-check-label" for="invalidCheck">Agree to Terms and Conditions</label>
+      						<div class="invalid-feedback">You Must Agree Before Submitting.</div>
+    				</div>
+  				</div>
+
+  				<!--button-->
+
+  				<div class="col-12">
+    				<button class="btn btn-primary" type="submit">Submit</button>
+  				</div>
+
+			</form>
+	</div>
+	<div class="container">
+		<form class="row g-3">
+  				<div class="col-md-4">
+    				<label for="f_name" class="form-label">First name</label>
+    				<input type="text" class="form-control" id="f_name" required>
+  				</div>
+
+  				<div class="col-md-4">
+    				<label for="l_name" class="form-label">Last name</label>
+    				<input type="text" class="form-control" id="l_name" required>
+  				</div>
+
+  				<div class="col-md-4">
+    				<label for="username" class="form-label">Username</label>
+    						<div class="input-group">
+      								<span class="input-group-text" id="inputGroupPrepend2">@</span>
+      								<input type="text" class="form-control" id="username" required>
+    						</div>
+  				</div>
+
+  				<div class="col-md-6">
+    				<label for="city" class="form-label">City</label>
+    				<input type="text" class="form-control" id="city" required>
+  				</div>
+
+  				<div class="col-md-3">
+    				<label for="state" class="form-label">State</label>
+    				<select class="form-select" id="state" required>
+      						<option selected disabled value="">Choose...</option>
+      						<option>...</option>
+    				</select>
+  				</div>
+
+  				<div class="col-md-3">
+    				<label for="zip" class="form-label">Zip</label>
+    				<input type="text" class="form-control" id="zip" required>
+  				</div>
+
+  				<div class="col-12">
+    				<div class="form-check">
+      						<input class="form-check-input" type="checkbox" value="" id="checkbox" required>
+      						<label class="form-check-label" for="checkbox">Agree to terms and conditions</label>
+    				</div>
+  				</div>
+
+  				<div class="col-12">
+    				<button class="btn btn-primary" type="submit">Submit form</button>
+  				</div>
+		</form>
+	</div>
+
+
+
+
+
+
+
+<!--bt5 Form validation end-->
+
+<!--bt5 content start-->
+<section class="border rounded border-primary">
+	<div class="container">
+		<p class="h1">Lorem Ipsum dolor sit amet</p>
+		<h3>Fancy Display
+			<small class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
+		</h3>
+		<h2 class="display-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+		<h2 class="display-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet turpis quis tortor aliquam gravida. Fusce arcu lacus, maximus eget pellentesque vitae, lobortis at mi. Etiam auctor nulla ut nibh dapibus, at sollicitudin lacus tempor. Vestibulum at congue elit. Nunc blandit non lectus in mollis. Nulla ac justo ipsum. Curabitur vestibulum metus non diam posuere porttitor. Vivamus finibus sem vitae nisl malesuada, suscipit cursus dolor varius.</p>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet turpis quis tortor aliquam gravida. Fusce arcu lacus, maximus eget pellentesque vitae, lobortis at mi. Etiam auctor nulla ut nibh dapibus, at sollicitudin lacus tempor. Vestibulum at congue elit. Nunc blandit non lectus in mollis. Nulla ac justo ipsum. Curabitur vestibulum metus non diam posuere porttitor. Vivamus finibus sem vitae nisl malesuada, suscipit cursus dolor varius.</p>
+		<p><s>Lorem ipsum dolor sit amet</s></p>
+		<p><abbr title="attribute">attr</abbr></p>
+		<p><abbr title="Hypertext Markup Language" class="initialism">HTML</abbr></p>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<figure class="text-center">
+			<blockquote class="blockquote">
+				<p>Lorem ipsum dolor sit amet</p>
+			</blockquote>
+			<figcaption class="blockquote-footer">
+				Someone famous in <cite title="Source Title">Source Title</cite>
+			</figcaption>
+		</figure>
+	</div>
+	<div class="container">
+		<ul class="list-unstyled">
+  			<li>This is a list.</li>
+  			<li>It appears completely unstyled.</li>
+  			<li>Structurally, it's still a list.</li>
+  			<li>However, this style only applies to immediate child elements.</li>
+  			<li>Nested lists:
+    			<ul>
+      			<li>are unaffected by this style</li>
+      			<li>will still show a bullet</li>
+      			<li>and have appropriate left margin</li>
+    			</ul>
+  			</li>
+  			<li>This may still come in handy in some situations.</li>
+		</ul>
+		<ul class="list-inline">
+  			<li class="list-inline-item">This is a list item.</li>
+  			<li class="list-inline-item">And another one.</li>
+ 			<li class="list-inline-item">But they're displayed inline.</li>
+		</ul>
+	</div>
+</section>
+<section>
+	<div class="container">
+		<dl class="row">
+  			<dt class="col-sm-3">Coffee</dt>
+  			<dd class="col-sm-9">Black hot drink</dd>
+  			<dt class="col-sm-3">Milk</dt>
+  			<dd class="col-sm-9">
+  				<p>White cold drink</p>
+  				<p>White cold drink</p>
+  			</dd>
+
+  			<dt class="col-sm-3 text-truncate">Truncated term is truncated This can be useful when space is tight. Adds an ellipsis at the end.</dt>
+  			<dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
+
+  			<dt class="col-sm-3">Nesting</dt>
+  			<dd class="col-sm-9">
+  				<dl class="row">
+  					<dt class="col-sm-4">Nested definition list I heard you like definition lists. Let me put a definition list inside your definition list.</dt>
+  					<dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list. I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+  				</dl>
+  			</dd>
+  		</dl>
+	</div>
+</section>
+<section>
+	<div>
+		<img src="images/coffee.jpg" class="img-fluid img-thumbnail rounded float-start" alt="minimo">
+		<img src="images/road.jpg" class="img-fluid img-thumbnail rounded float-end" alt="minimo">
+		<img src="images/day.jpg" class="img-fluid img-thumbnail rounded mx-auto d-block" alt="minimo">
+	</div>
+	<div>
+		<img src="images/music.jpg" class="rounded mx-auto d-block" alt="minimo">
+	</div>
+	<div class="container">
+		<figure class="figure">
+			<img src="images/coffee.jpg" class="figure-img img-fluid rounded" alt="minimo">
+			<figcaption class="figure-caption text-center">This is Coffee</figcaption>
+		</figure>
+	</div>
+	<div class="text-center">
+		<img src="images/coffee.jpg" class="rounded" alt="minimo">
+	</div>
+</section>
+<section>
+	<div class="container table-responsive">
+		<table class="table table-danger table-striped-columns table-hover table-bordered border-dark table-sm">
+			<caption class="caption-top">List Of XYZ</caption>
+				<thead class="table-warning">
+					<tr>
+						<th scope="col">Number</th>
+						<th scope="col">F.Name</th>
+						<th scope="col">L.Name</th>
+						<th scope="col">Handle</th>
+						<th scope="col">Number</th>
+						<th scope="col">F.Name</th>
+						<th scope="col">L.Name</th>
+						<th scope="col">Handle</th>
+					</tr>
+				</thead>
+				<tbody class="table-group-divider">
+					<tr class="table-active">
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Sam</td>
+						<td>@mdo</td>
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Sam</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Sam</td>
+						<td>Mark</td>
+						<td>@fix</td>
+						<th>2</th>
+						<td>Sam</td>
+						<td>Mark</td>
+						<td>@fix</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<table class="table mb-0 table-info">
+								<thead>
+									<tr>
+										<th>Header 1</th>
+										<th>Header 2</th>
+										<th>Header 3</th>
+										<th>Header 4</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>A</th>
+										<td>First</td>
+										
+									</tr>
+									<tr>
+										<th>B</th>
+										<td>Third</td>
+										<td></td>
+										<td>Fifth</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+						<td colspan="4">
+							<table class="table mb-0 table-info">
+								<thead>
+									<tr>
+										<th>Header 1</th>
+										<th>Header 2</th>
+										<th>Header 3</th>
+										<th>Header 4</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>A</th>
+										<td>First</td>
+										
+									</tr>
+									<tr>
+										<th>B</th>
+										<td>Third</td>
+										<td></td>
+										<td>Fifth</td>
+										
+									</tr>
+
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td colspan="2" class="table-active">Larry The Bird</td>
+						<td class="table-active">@twitter</td>
+						<th>3</th>
+						<td colspan="2" class="table-active">Larry The Bird</td>
+						<td class="table-active">@twitter</td>
+					</tr>
+					<tr class="table-active">
+						<th scope="row">1</th>
+						<td>Mark</td>
+						<td>Sam</td>
+						<td>@mdo</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Sam</td>
+						<td>Mark</td>
+						<td>@fix</td>
+					</tr>
+					<tr>
+						<td colspan="4">
+							<table class="table mb-0 table-info">
+								<thead>
+									<tr>
+										<th>Header 1</th>
+										<th>Header 2</th>
+										<th>Header 3</th>
+										<th>Header 4</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>A</th>
+										<td>First</td>
+									</tr>
+									<tr>
+										<th>B</th>
+										<td>Third</td>
+										<td></td>
+										<td>Fifth</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td colspan="2" class="table-active">Larry The Bird</td>
+						<td class="table-active">@twitter</td>
+					</tr>
+				</tbody>
+		</table>
+	</div>
+</section>
+<!--bt5 content end-->
+
+<!--js link-->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
